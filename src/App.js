@@ -35,7 +35,6 @@ export default function App() {
         <p>...loading...</p>
       ) : (
         <>
-          {" "}
           <h1>Hello {data.profile.firstName}</h1>
           <Nav profile={data.profile} />
         </>
