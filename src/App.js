@@ -19,7 +19,7 @@ export default function App() {
     const fetchData = async () => {
       setIsLoading(true);
       const result = await axios(
-        "http://eg-fit-backend.herokuapp.com/profile",
+        "https://eg-fit-backend.herokuapp.com/profile",
         axiosRequestConfig
       );
       setData(result.data);
