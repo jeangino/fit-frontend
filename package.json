@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "env $(cat .env | grep -v \"#\" | xargs) react-scripts start",
+    "dev": "env-cmd react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -23,6 +23,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "react-scripts": "^4.0.0"
   }
 }
